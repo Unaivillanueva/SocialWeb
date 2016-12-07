@@ -1,0 +1,650 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Edible Networks</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <link href="css/agency.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Home</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Project</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">The database</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">Data Analysis</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#sent">Sentiment Analysis</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">Team</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">.</div>
+                <div class="intro-heading">.</div>
+                
+            </div>
+        </div>
+    </header>
+
+    <!-- Project Section -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center"style="margin-top:-80px">
+                    <h2 class="section-heading">Project Overview</h2>
+                    <h3 class="section-subheading text-muted">The aim of this project is to analyze a database containing
+                    recipes from around the world using networks. With this we intentend to find similarities between the 
+                    database and the real world.</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div>
+                        <img src="https://cdn2.iconfinder.com/data/icons/classic-development-circle/512/data_warehouse-512.png"alt="Mountain View" style="width:100px;height:100px;">
+                    </div>
+                    <h4 class="service-heading">Data visualization</h4>
+                    <p class="text-muted">Data visualization throught ingredient and recipe networks.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="http://www.cytoscape.org/images/logo/cy3logoOrange.svg" alt="Mountain View" style="width:100px;height:100px;">
+                    <h4 class="service-heading">Network analysis</h4>
+                    <p class="text-muted">Analysis of communities, world cuisines, 
+                    importance of ingredients and creation of recipes based on key ingredients.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="http://www.clarabridge.com/wp-content/themes/clarabridge/images/logo.svg" alt="Mountain View" style="width:100px;height:100px;">
+                    <h4 class="service-heading">Sentiment analysis</h4>
+                    <p class="text-muted">Analysis of the sentiment linked to the different cousines of the world. Which ones are tha happiest? 
+                    And the saddest?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Database Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center"style="margin-top:-80px">
+                    <h2 class="section-heading">The Database</h2>
+                    <h3 class="section-subheading text-muted">The database for this project was obtained from a Kaggle competition and Yummly
+                     and it contains recipes from all over the world. In total we have x recipes and xx ingredients.
+                     We wil be working with a JSON file of 12Mb. All the data inside will be ordered by cuisine, recipe ID, and ingredients of the recipe.
+                    </h3>
+                  
+                    <img src=".\img\yummly.jpg"
+                             style="width:1150px;height:800px;">
+                    <p class="text-muted" style="padding-top:20px"></p>
+                     
+
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <!-- Data Analysis Section -->
+    <section id="about" style="background-color:black">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center" style="margin-top:-80px">
+                    <h2 class="section-heading" style="color:GhostWhite">Data Analysis</h2>
+                    <h3 class="section-subheading text-muted" style="color:ghostwhite" >Analysis of the database network</h3>
+                    <img src=".\img\graph2.jpg" style="width:1200px; align-self:center; margin-top:-50px ">
+                    <p style="color:dimgrey "> Food Network graph</p>
+                </div>
+            </div>   
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-left">
+                    <h3 style="margin-top:-80px">Introduction to the data</h3>
+                    <p> The first part of the project will consist on the analysis of the network, taking a look at the nodes we selected, their links, and how the network is built. So let's begin by
+                    explaining  a little bit what the database we are using contains. 
+                    </p>
+                    <p> As se mentioned earlier, the database is obtained from a Kaggle competition called "What's Cooking" that was proposed by Yummly. For his, the recipe site provided a series of 
+                    recipes ordered by cuisine type like Greek, Chinese, Japanese, Italian... All the recipes contained a recipe ID and a list with the ingredients needed to cook it. Unfortunatelly, 
+                    it didn't contan the name of the recipe. But no worries! we will take care of that later on the project. To sum up, this introduction, here is an example of one of the recipes from 
+                    the database:</p>
+                    <ul style="list-style-type:none">   
+                        <li> { </li>
+                        <li style="font-style:italic"> "id": 24717,</li>
+                        <li> "cuisine": "indian",</li>
+                        <li>"ingredients":</li>
+                        <ul style="list-style-type:none">"tumeric",
+                                <li> "vegetable stock",</li>
+                                <li> "tomatoes",</li>
+                                <li> "garam masala",</li>
+                                <li> "naan",</li>
+                                <li> "red lentils",</li>
+                                <li> "red chili peppers",</li>
+                                <li> "onions",</li>
+                                <li> "spinach",</li>
+                                <li> "sweet potatoes"</li>
+                        </ul>
+                        <li> }</li> 
+                    </ul>
+                    
+                    <h3 style="margin-top: 50px">Creating the network</h3>
+                    <p>To start creating the network, first we need to define which were going to be the nodes and which would be the links between them. In our case, we decided that the ingredients
+                    of each recipe would be the nodes of the network. The link on the other hand would be the recipes they share. This means that, if two ingredients appear in the same recipe they would
+                    linked in the network. Moreover, we decided to create the network as a weighted network, where the weight of the links would be the amount of recipes the ingredients sare. In total we 
+                    39774 recipes and 1817 ingredients. With this, we created a network with 1817 nodes and 41325 links. As mentioned before it is a weighted and undirected graph. 
+                   </p>
+                    <img src=".\img\nodes.png" style="width:1200px; align-self:center; margin-top:-150px ">
+                    
+
+                    <h3 style="margin-top:-80px">Analyzing the network</h3>    
+                    <p> The first steps we took to analyze this network is to look at the degree of the ingredients.  The degree represents the amount of links a node has, and since in our network the links 
+                    are recipes, it would make sense that the most used ingredients in cooking have the highest number on links, so let's take a look at it:</p>  
+                    <table style="width:35%">
+                        <tr>
+                            <th>Ingredient</th>
+                            <th>Degree</th>
+                        </tr>
+                        <tr>
+                            <td>Salt</td>
+                            <td>10386</td>
+                        </tr>
+                        <tr>
+                            <td>Garlic</td>
+                            <td>5592</td>
+                        </tr>
+                        <tr>
+                            <td>Onions</td>
+                            <td>5232</td>
+                        </tr>
+                        <tr>
+                            <td>Olive Oil</td>
+                            <td>5144</td>
+                        </tr>
+                        <tr>
+                            <td>Water</td>
+                            <td>4200</td>
+                        </tr>
+                        <tr>
+                            <td>Ground Black Pepper</td>
+                            <td>3430</td>
+                        </tr>
+                        <tr>
+                            <td>Garlic Cloves</td>
+                            <td>3410</td>
+                        </tr>
+                        <tr>
+                            <td>Sugar</td>
+                            <td>3256</td>
+                        </tr>
+                    </table>
+                    <p style="margin-top:15px">The next step was to assign each ingredient to a cuisine. Up to this point, what we have in the network is a mess of ingredients mixed up with links conecting them. Since our goals are to compare this network to reality
+                    we need to sign each ingredient to a different cuisine.</p>
+                    <p> From our data, we can extract that we have 20 different types of cuisines: irish, mexican, chinese, filipino, vietnamese, moroccan, brazilian, japanese, british, greek, indian, jamaican,
+                     french, spanish, russian, cajun creole, thai, southern US, korean and italian. To assign each ingredient to its cuisine we need to check in which recipes the ingredient appears and add it to the cuisine that recipe
+                    belongs. However, many ingredients aren't unique to a cuisine. To solve this issue we aproached the solution in two ways and after seeing the results we selected the one we thought was most representative of reality.
+                    Here we will explain the methos we finally used, but the other can be found in the notebook.</p>
+                    <p>The method we chose assigned each ingredient to the cuisine in which it appeared most. Let's see this with an example from the notebook: </p>
+                    <p>Soy sauce is...</p>
+                    <p style="font-style: italic">{u'irish': 0, u'mexican': 2, u'chinese': 35, u'filipino': 5, u'vietnamese': 6, u'spanish': 0, u'japanese': 8, u'moroccan': 0, u'french': 0, u'greek': 0, u'indian': 2, u'jamaican': 1, u'british': 0, u'brazilian': 0, 
+                    u'russian': 0, u'cajun_creole': 0, u'thai': 4, u'southern_us': 0, u'korean': 15, u'italian': 0}</p>
+                    <p>Chinese!</p>
+                    <p>Now it's time to take a deeper look at these cuisines, analize communities and various degrees for the nodes.</p>
+
+                    <h3 style="margin-top: 50px">Cuisines</h3>
+                    <p> Let's start looking at the cuisines by the number of ingredients each one has.</p>
+                    <img src=".\img\ing-cui2.png" style="width:1200px; margin-top:15px ">
+                    <p>We can see that the number of ingredients per cuisine in very irregular since and mexican and italian cuisines have ten times more ingredients than brazilian or spanish cuisines.
+                    We were affraid that this was just a characterisitic of our dataset and that there wasn't much that we could do with it. To check that it's not due to our assignment of ingredients to a single cuisine 
+                    we ploted the number of recipes that we had per cuisine.</p>
+                    <img src=".\img\ing-cui3.png" style="width:1200px; margin-top:15px ">
+                    <p>We see that the distribution of the number of recipes follows a similar pattern to the number of ingredients per cuisine so we can't say our assignment was farfetched.</p>
+                    <p> Añadir lo de # Understanding the difference between degree and degree_centrality?¿</p>
+
+                    <h3 style="margin-top: 50px">Defining communities</h3>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Sentiment Analysis Section -->
+    <section id="sent">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Sentiment Analysis</h2>
+                    <h3 class="section-subheading text-muted">Analysis of the sentiment realted to each cuisine on Twitter.</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 text-left">
+                    <h3 style="margin-top:15px">Introduction to sentiment analysis</h3>
+                    <p>In this section we are going to make some sentiment analysis of the different cuisines with Twitter. We have gathered more than 1000 tweets from each cuisine, searching with the hashtag "#spanishcuisine"
+                    for example for spanish cuisine suing the Twitter API. After cleaning all the tweets, we took the text from each one and analyzed the sentiment based on the LabMt wordlist, that contains an average sentiment for a number of words.
+                    This are the results for the analysis:
+                    </p>
+                    <img src=".\img\sent_12.png" style="width:1800px; height:600px; align-self:center; margin-top:15px; margin-left:-280px">
+                    <p style="margin-top:-40px"> As we can see from the graph on the left, all the cuisines are quite close in the range of 5 to 6 average sentiment. However, if we adjust the range of the axis like the graph on the right, we can see the differences a bit more 
+                    clearly. The fist thing to notice is that the sentiment related to american a british cuisines is significantly lower than the rest. In a second level, with an average sentiment level we find mexican, italian, greek or japanese cuisines
+                    , and above those with the best sentiment are chinese, cajun or vietnamese cuisines. </p>
+                    <p>Let's now take a look at this in the world map.</p>
+                    <img src=".\img\sent_map.png" style="width:1500px; height:550px; align-self:center; margin-top:50px; margin-left:-200px">
+                    <h3 style="margin-top:15px">WordClouds</h3>
+                    <p> Let's now take a look at the wordclouds we can generate for each type of cuisine, based on the tweets. It is important to know that the text for this cloudwords comes from various tweets and that therefore text my vary a lot from
+                    what a wordcloud for the cuisines would look like.</p>
+                    <div class="floated_img">
+                        <img src=".\img\american.png" alt="Some image"style="width:370px; height:200px">
+                        <p style="margin-left:150px; color:dimgrey">American</p>
+                    </div>
+                    <div class="floated_img">
+                        <img src=".\img\japanese.png" alt="Another image" style="width:370px; height:200px">
+                        <p style="margin-left:150px; color:dimgrey" >Japanese</p>
+                    </div>
+                    <div class="floated_img">
+                        <img src=".\img\chinese.png" alt="Some image" style="width:370px; height:200px">
+                        <p style="margin-left:150px; color:dimgrey" >Chinese</p>
+                    </div>
+
+                    <div class="floated_img">
+                        <img src=".\img\brazilian.png" alt="Some image" style="width:370px; height:200px">
+                        <p style="margin-left:150px; color:dimgrey" >Brazilian</p>
+                    </div>
+                    <div class="floated_img">
+                        <img src=".\img\italian.png" alt="Another image" style="width:370px; height:200px">
+                        <p style="margin-left:150px; color:dimgrey" >Italian</p>
+                    </div>
+                    <div class="floated_img">
+                        <img src=".\img\spanish.png" alt="Some image" style="width:370px; height:200px">
+                        <p style="margin-left:150px; color:dimgrey" >Spanish</p>
+                    </div>
+                    <div class="floated_img">
+                         <img src=".\img\british.png" alt="Some image" style="width:370px; height:200px">
+                         <p style="margin-left:150px; color:dimgrey" >British</p>
+                    </div>
+                    <div class="floated_img">
+                         <img src=".\img\french.png" alt="Another image" style="width:370px; height:200px">
+                         <p style="margin-left:150px; color:dimgrey" >French</p>
+                    </div>
+                    <div class="floated_img">
+                         <img src=".\img\jamaican.png" alt="Some image" style="width:370px; height:200px">
+                         <p style="margin-left:150px; color:dimgrey" >Jamaican</p>
+                    </div>
+                    <p> Conclusiones?</p>
+            </div>
+        </div>
+    </section>
+    <!-- Team Section -->
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">The Team</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Pau oliver</h4>
+                        <p class="text-muted">Lead Designer</p>
+                        <ul class="list-inline social-buttons">
+                            <li>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Andrea Quemada</h4>
+                        <p class="text-muted">Lead Marketer</p>
+                        <ul class="list-inline social-buttons">
+                            <li>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Unai Villanueva</h4>
+                        <p class="text-muted">Lead Developer</p>
+                        <ul class="list-inline social-buttons">
+                            <li>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Your Website 2016</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <p>
+                                    <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
+                                <ul class="list-inline">
+                                    <li>Date: July 2014</li>
+                                    <li>Client: Round Icons</li>
+                                    <li>Category: Graphic Design</li>
+                                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>Project Heading</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="">
+                                <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
+                                <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
+                                <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
+                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">
+                                <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
+                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="">
+                                <p>Escape is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.</p>
+                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/dreams-preview.png" alt="">
+                                <p>Dreams is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. It’s a beautiful template that’s designed with the Bootstrap framework in mind.</p>
+                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/agency.min.js"></script>
+
+</body>
+
+</html>

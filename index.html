@@ -459,9 +459,22 @@
                     <p>Similar effects can be seen in other rows of the confusion matrix, like the 1st one, that contains a high number of italian ingredients but also french and mexican, suggesting that there are many common ingredients between recipes of those cuisines.</p>
 
                     <h3 style="margin-top: 50px">Solving the recipe name problem</h3>
-                    <p></p>
-
-                    </div>
+                    <p>At the beggining of the project we have mentioned that the database dind't include the names for the recipes, only ID's. 
+                        The dataset we've been using has allowed us so far to find the most common ingredients, the most representative ingredients of the different cuisines, to check that cuisines form communities, and to find a partition better than the cuisines. What else could
+                     we achieve with it? One could think of comparing recipe names across cuisines, or to build a reccommender of a recipe given certain ingredients -or another recipe. But for some of these applications we would do better if the dataset included the recipe names. 
+                    Note that we have the recipes as a list of ingredients but we don't know their name...</p>
+                    <p>That gave us the idea of trying to generate a name ourselves. We'll build a function that comes up with a name for the given recipe. We don't expect great results, but it is a good way of applying the measures and indicators we've computed so far and to see
+                     how useful they are in overcoming the expected inconvenients of our limited method. Note that we don't have the recipe preparation steps either so we can't really know how are the ingredients combined. We'll also add a touch of humor to the generated names. 
+                    They will consist basically of two important ingredients of the given recipe, joined by some preposition and embellished by -often pompous- adjectives.</p>
+                    <p>Here are some results of our small FUNction:</p>
+                    <ul style="list-style-type:none">
+                        <li> Succulent stewed tomatoes into onions </li>
+                        <li> Marinated creamy peanut butter </li>
+                        <li> Salty ground coriander above ground turmeric </li>
+                        <li> Syrupy fresh parsley into salt </li>
+                        <li> Light coconut cream filled with fish sauce </li>
+                    </ul>
+</div>
             </div>
 
         </div>

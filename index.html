@@ -12,17 +12,17 @@
     <title>Edible Networks</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Theme CSS -->
-    <link href="css/agency.min.css" rel="stylesheet">
+    <link href="agency.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -131,7 +131,7 @@
                      We wil be working with a JSON file of 12Mb. All the data inside will be ordered by cuisine, recipe ID, and ingredients of the recipe.
                     </h3>
                   
-                    <img src=".\img\yummly.jpg"
+                    <img src="yummly.jpg"
                              style="width:1150px;height:800px;">
                     <p class="text-muted" style="padding-top:20px"></p>
                      
@@ -148,7 +148,7 @@
                 <div class="col-lg-12 text-center" style="margin-top:-80px">
                     <h2 class="section-heading" style="color:GhostWhite">Data Analysis</h2>
                     <h3 class="section-subheading text-muted" style="color:ghostwhite" >Analysis of the database network</h3>
-                    <img src=".\img\graph2.jpg" style="width:1200px; align-self:center; margin-top:-50px ">
+                    <img src="graph2.jpg" style="width:1200px; align-self:center; margin-top:-50px ">
                     <p style="color:dimgrey "> Food Network graph</p>
                 </div>
             </div>   
@@ -191,7 +191,7 @@
                     linked in the network. Moreover, we decided to create the network as a weighted network, where the weight of the links would be the amount of recipes the ingredients sare. In total we 
                     39774 recipes and 1817 ingredients. With this, we created a network with 1817 nodes and 41325 links. As mentioned before it is a weighted and undirected graph. 
                    </p>
-                    <img src=".\img\nodes.png" style="width:1200px; align-self:center; margin-top:-150px ">
+                    <img src="nodes.png" style="width:1200px; align-self:center; margin-top:-150px ">
                     
 
                     <h3 style="margin-top:-80px">Analyzing the network</h3>    
@@ -250,11 +250,11 @@
 
                     <h3 style="margin-top: 50px">Cuisines</h3>
                     <p> Let's start looking at the cuisines by the number of ingredients each one has.</p>
-                    <img src=".\img\ing-cui2.png" style="width:1200px; margin-top:15px ">
+                    <img src="ing-cui2.png" style="width:1200px; margin-top:15px ">
                     <p>We can see that the number of ingredients per cuisine in very irregular since and mexican and italian cuisines have ten times more ingredients than brazilian or spanish cuisines.
                     We were affraid that this was just a characterisitic of our dataset and that there wasn't much that we could do with it. To check that it's not due to our assignment of ingredients to a single cuisine 
                     we ploted the number of recipes that we had per cuisine.</p>
-                    <img src=".\img\ing-cui3.png" style="width:1200px; margin-top:15px ">
+                    <img src="ing-cui3.png" style="width:1200px; margin-top:15px ">
                     <p>We see that the distribution of the number of recipes follows a similar pattern to the number of ingredients per cuisine so we can't say our assignment was farfetched.</p>
                     <p> Añadir lo de # Understanding the difference between degree and degree_centrality?¿</p>
 
@@ -283,50 +283,50 @@
                     for example for spanish cuisine suing the Twitter API. After cleaning all the tweets, we took the text from each one and analyzed the sentiment based on the LabMt wordlist, that contains an average sentiment for a number of words.
                     This are the results for the analysis:
                     </p>
-                    <img src=".\img\sent_12.png" style="width:1800px; height:600px; align-self:center; margin-top:15px; margin-left:-280px">
+                    <img src="sent_12.png" style="width:1800px; height:600px; align-self:center; margin-top:15px; margin-left:-280px">
                     <p style="margin-top:-40px"> As we can see from the graph on the left, all the cuisines are quite close in the range of 5 to 6 average sentiment. However, if we adjust the range of the axis like the graph on the right, we can see the differences a bit more 
                     clearly. The fist thing to notice is that the sentiment related to american a british cuisines is significantly lower than the rest. In a second level, with an average sentiment level we find mexican, italian, greek or japanese cuisines
                     , and above those with the best sentiment are chinese, cajun or vietnamese cuisines. </p>
                     <p>Let's now take a look at this in the world map.</p>
-                    <img src=".\img\sent_map.png" style="width:1500px; height:550px; align-self:center; margin-top:50px; margin-left:-200px">
+                    <img src="sent_map.png" style="width:1500px; height:550px; align-self:center; margin-top:50px; margin-left:-200px">
                     <h3 style="margin-top:15px">WordClouds</h3>
                     <p> Let's now take a look at the wordclouds we can generate for each type of cuisine, based on the tweets. It is important to know that the text for this cloudwords comes from various tweets and that therefore text my vary a lot from
                     what a wordcloud for the cuisines would look like.</p>
                     <div class="floated_img">
-                        <img src=".\img\american.png" alt="Some image"style="width:370px; height:200px">
+                        <img src="american.png" alt="Some image"style="width:370px; height:200px">
                         <p style="margin-left:150px; color:dimgrey">American</p>
                     </div>
                     <div class="floated_img">
-                        <img src=".\img\japanese.png" alt="Another image" style="width:370px; height:200px">
+                        <img src="japanese.png" alt="Another image" style="width:370px; height:200px">
                         <p style="margin-left:150px; color:dimgrey" >Japanese</p>
                     </div>
                     <div class="floated_img">
-                        <img src=".\img\chinese.png" alt="Some image" style="width:370px; height:200px">
+                        <img src="chinese.png" alt="Some image" style="width:370px; height:200px">
                         <p style="margin-left:150px; color:dimgrey" >Chinese</p>
                     </div>
 
                     <div class="floated_img">
-                        <img src=".\img\brazilian.png" alt="Some image" style="width:370px; height:200px">
+                        <img src="brazilian.png" alt="Some image" style="width:370px; height:200px">
                         <p style="margin-left:150px; color:dimgrey" >Brazilian</p>
                     </div>
                     <div class="floated_img">
-                        <img src=".\img\italian.png" alt="Another image" style="width:370px; height:200px">
+                        <img src="italian.png" alt="Another image" style="width:370px; height:200px">
                         <p style="margin-left:150px; color:dimgrey" >Italian</p>
                     </div>
                     <div class="floated_img">
-                        <img src=".\img\spanish.png" alt="Some image" style="width:370px; height:200px">
+                        <img src="spanish.png" alt="Some image" style="width:370px; height:200px">
                         <p style="margin-left:150px; color:dimgrey" >Spanish</p>
                     </div>
                     <div class="floated_img">
-                         <img src=".\img\british.png" alt="Some image" style="width:370px; height:200px">
+                         <img src="british.png" alt="Some image" style="width:370px; height:200px">
                          <p style="margin-left:150px; color:dimgrey" >British</p>
                     </div>
                     <div class="floated_img">
-                         <img src=".\img\french.png" alt="Another image" style="width:370px; height:200px">
+                         <img src="french.png" alt="Another image" style="width:370px; height:200px">
                          <p style="margin-left:150px; color:dimgrey" >French</p>
                     </div>
                     <div class="floated_img">
-                         <img src=".\img\jamaican.png" alt="Some image" style="width:370px; height:200px">
+                         <img src="jamaican.png" alt="Some image" style="width:370px; height:200px">
                          <p style="margin-left:150px; color:dimgrey" >Jamaican</p>
                     </div>
                     <p> Conclusiones?</p>
@@ -334,77 +334,7 @@
         </div>
     </section>
     <!-- Team Section -->
-    <section id="team" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">The Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Pau oliver</h4>
-                        <p class="text-muted">Lead Designer</p>
-                        <ul class="list-inline social-buttons">
-                            <li>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Andrea Quemada</h4>
-                        <p class="text-muted">Lead Marketer</p>
-                        <ul class="list-inline social-buttons">
-                            <li>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Unai Villanueva</h4>
-                        <p class="text-muted">Lead Developer</p>
-                        <ul class="list-inline social-buttons">
-                            <li>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    
    
 
     <!-- Contact Section -->

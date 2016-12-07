@@ -64,7 +64,10 @@
                     <li>
                         <a class="page-scroll" href="#sent">Sentiment Analysis</a>
                     </li>
-                    
+                    <li>
+                        <a class="page-scroll" href="https://github.com/ediblenetworks/SocialWeb/Recipe_Analysis_Explainer.ipynb">Explainer Notebook</a>
+                    </li>
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -78,7 +81,7 @@
             <div class="intro-text">
                 <div class="intro-lead-in">.</div>
                 <div class="intro-heading">.</div>
-                
+
             </div>
         </div>
     </header>
@@ -90,7 +93,7 @@
                 <div class="col-lg-12 text-center"style="margin-top:-80px">
                     <h2 class="section-heading">Project Overview</h2>
                     <h3 class="section-subheading text-muted">The aim of this project is to analyze a database containing
-                    recipes from around the world using networks. With this we intentend to find similarities between the 
+                    recipes from around the world using networks. With this we intentend to find similarities between the
                     database and the real world.</h3>
                 </div>
             </div>
@@ -105,13 +108,13 @@
                 <div class="col-md-4">
                     <img src="http://www.cytoscape.org/images/logo/cy3logoOrange.svg" alt="Mountain View" style="width:100px;height:100px;">
                     <h4 class="service-heading">Network analysis</h4>
-                    <p class="text-muted">Analysis of communities, world cuisines, 
+                    <p class="text-muted">Analysis of communities, world cuisines,
                     importance of ingredients and creation of recipes based on key ingredients.</p>
                 </div>
                 <div class="col-md-4">
                     <img src="http://www.clarabridge.com/wp-content/themes/clarabridge/images/logo.svg" alt="Mountain View" style="width:100px;height:100px;">
                     <h4 class="service-heading">Sentiment analysis</h4>
-                    <p class="text-muted">Analysis of the sentiment linked to the different cousines of the world. Which ones are tha happiest? 
+                    <p class="text-muted">Analysis of the sentiment linked to the different cousines of the world. Which ones are tha happiest?
                     And the saddest?</p>
                 </div>
             </div>
@@ -128,14 +131,14 @@
                      and it contains recipes from all over the world. In total we have x recipes and xx ingredients.
                      We wil be working with a JSON file of 12Mb. All the data inside will be ordered by cuisine, recipe ID, and ingredients of the recipe.
                     </h3>
-                  
+
                     <img src="yummly.jpg"
                              style="width:1150px;height:800px;">
                     <p class="text-muted" style="padding-top:20px"></p>
-                     
+
 
                 </div>
-            </div> 
+            </div>
         </div>
     </section>
 
@@ -149,7 +152,7 @@
                     <img src="graph2.jpg" style="width:1200px; align-self:center; margin-top:-50px ">
                     <p style="color:dimgrey "> Food Network graph</p>
                 </div>
-            </div>   
+            </div>
         </div>
     </section>
     <section id="about">
@@ -158,13 +161,13 @@
                 <div class="col-lg-12 text-left">
                     <h3 style="margin-top:-80px">Introduction to the data</h3>
                     <p> The first part of the project will consist on the analysis of the network, taking a look at the nodes we selected, their links, and how the network is built. So let's begin by
-                    explaining  a little bit what the database we are using contains. 
+                    explaining  a little bit what the database we are using contains.
                     </p>
-                    <p> As se mentioned earlier, the database is obtained from a Kaggle competition called "What's Cooking" that was proposed by Yummly. For his, the recipe site provided a series of 
-                    recipes ordered by cuisine type like Greek, Chinese, Japanese, Italian... All the recipes contained a recipe ID and a list with the ingredients needed to cook it. Unfortunatelly, 
-                    it didn't contan the name of the recipe. But no worries! we will take care of that later on the project. To sum up, this introduction, here is an example of one of the recipes from 
+                    <p> As se mentioned earlier, the database is obtained from a Kaggle competition called "What's Cooking" that was proposed by Yummly. For his, the recipe site provided a series of
+                    recipes ordered by cuisine type like Greek, Chinese, Japanese, Italian... All the recipes contained a recipe ID and a list with the ingredients needed to cook it. Unfortunatelly,
+                    it didn't contan the name of the recipe. But no worries! we will take care of that later on the project. To sum up, this introduction, here is an example of one of the recipes from
                     the database:</p>
-                    <ul style="list-style-type:none">   
+                    <ul style="list-style-type:none">
                         <li> { </li>
                         <li style="font-style:italic"> "id": 24717,</li>
                         <li> "cuisine": "indian",</li>
@@ -180,21 +183,21 @@
                                 <li> "spinach",</li>
                                 <li> "sweet potatoes"</li>
                         </ul>
-                        <li> }</li> 
+                        <li> }</li>
                     </ul>
-                    
+
                     <h3 style="margin-top: 50px">Creating the network</h3>
                     <p>To start creating the network, first we need to define which were going to be the nodes and which would be the links between them. In our case, we decided that the ingredients
                     of each recipe would be the nodes of the network. The link on the other hand would be the recipes they share. This means that, if two ingredients appear in the same recipe they would
-                    linked in the network. Moreover, we decided to create the network as a weighted network, where the weight of the links would be the amount of recipes the ingredients sare. In total we 
-                    39774 recipes and 1817 ingredients. With this, we created a network with 1817 nodes and 41325 links. As mentioned before it is a weighted and undirected graph. 
+                    linked in the network. Moreover, we decided to create the network as a weighted network, where the weight of the links would be the amount of recipes the ingredients sare. In total we
+                    39774 recipes and 1817 ingredients. With this, we created a network with 1817 nodes and 41325 links. As mentioned before it is a weighted and undirected graph.
                    </p>
                     <img src="nodes.png" style="width:1200px; align-self:center; margin-top:-150px ">
-                    
 
-                    <h3 style="margin-top:-80px">Analyzing the network</h3>    
-                    <p> The first steps we took to analyze this network is to look at the degree of the ingredients.  The degree represents the amount of links a node has, and since in our network the links 
-                    are recipes, it would make sense that the most used ingredients in cooking have the highest number on links, so let's take a look at it:</p>  
+
+                    <h3 style="margin-top:-80px">Analyzing the network</h3>
+                    <p> The first steps we took to analyze this network is to look at the degree of the ingredients.  The degree represents the amount of links a node has, and since in our network the links
+                    are recipes, it would make sense that the most used ingredients in cooking have the highest number on links, so let's take a look at it:</p>
                     <table style="width:35%">
                         <tr>
                             <th>Ingredient</th>
@@ -241,7 +244,7 @@
                     Here we will explain the methos we finally used, but the other can be found in the notebook.</p>
                     <p>The method we chose assigned each ingredient to the cuisine in which it appeared most. Let's see this with an example from the notebook: </p>
                     <p>Soy sauce is...</p>
-                    <p style="font-style: italic">{u'irish': 0, u'mexican': 2, u'chinese': 35, u'filipino': 5, u'vietnamese': 6, u'spanish': 0, u'japanese': 8, u'moroccan': 0, u'french': 0, u'greek': 0, u'indian': 2, u'jamaican': 1, u'british': 0, u'brazilian': 0, 
+                    <p style="font-style: italic">{u'irish': 0, u'mexican': 2, u'chinese': 35, u'filipino': 5, u'vietnamese': 6, u'spanish': 0, u'japanese': 8, u'moroccan': 0, u'french': 0, u'greek': 0, u'indian': 2, u'jamaican': 1, u'british': 0, u'brazilian': 0,
                     u'russian': 0, u'cajun_creole': 0, u'thai': 4, u'southern_us': 0, u'korean': 15, u'italian': 0}</p>
                     <p>Chinese!</p>
                     <p>Now it's time to take a deeper look at these cuisines, analize communities and various degrees for the nodes.</p>
@@ -250,7 +253,7 @@
                     <p> Let's start looking at the cuisines by the number of ingredients each one has.</p>
                     <img src="ing-cui2.png" style="width:1200px; margin-top:15px ">
                     <p>We can see that the number of ingredients per cuisine in very irregular since and mexican and italian cuisines have ten times more ingredients than brazilian or spanish cuisines.
-                    We were affraid that this was just a characterisitic of our dataset and that there wasn't much that we could do with it. To check that it's not due to our assignment of ingredients to a single cuisine 
+                    We were affraid that this was just a characterisitic of our dataset and that there wasn't much that we could do with it. To check that it's not due to our assignment of ingredients to a single cuisine
                     we ploted the number of recipes that we had per cuisine.</p>
                     <img src="ing-cui3.png" style="width:1200px; margin-top:15px ">
                     <p>We see that the distribution of the number of recipes follows a similar pattern to the number of ingredients per cuisine so we can't say our assignment was farfetched.</p>
@@ -282,7 +285,7 @@
                     This are the results for the analysis:
                     </p>
                     <img src="sent_12.png" style="width:1800px; height:600px; align-self:center; margin-top:15px; margin-left:-280px">
-                    <p style="margin-top:-40px"> As we can see from the graph on the left, all the cuisines are quite close in the range of 5 to 6 average sentiment. However, if we adjust the range of the axis like the graph on the right, we can see the differences a bit more 
+                    <p style="margin-top:-40px"> As we can see from the graph on the left, all the cuisines are quite close in the range of 5 to 6 average sentiment. However, if we adjust the range of the axis like the graph on the right, we can see the differences a bit more
                     clearly. The fist thing to notice is that the sentiment related to american a british cuisines is significantly lower than the rest. In a second level, with an average sentiment level we find mexican, italian, greek or japanese cuisines
                     , and above those with the best sentiment are chinese, cajun or vietnamese cuisines. We find quite interesting that cuisines with usually "bad reputation" like the british and american ones are the ones with the lowest rating. On the ohter hand
                     asian quisines have good reputation in the western countries, so that might be a reason why they are rated so high. </p>
@@ -335,18 +338,18 @@
         </div>
     </section>
     <!-- Team Section -->
-    
-   
+
+
 
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    
+
                 </div>
             </div>
-            
+
         </div>
     </section>
 

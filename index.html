@@ -64,10 +64,7 @@
                     <li>
                         <a class="page-scroll" href="#sent">Sentiment Analysis</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="http://nbviewer.jupyter.org/github/ediblenetworks/SocialWeb/blob/master/Recipe_Analysis_Explainer.ipynb">Explainer Notebook</a>
-                    </li>
-
+                    
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -81,7 +78,7 @@
             <div class="intro-text">
                 <div class="intro-lead-in">.</div>
                 <div class="intro-heading">.</div>
-
+                
             </div>
         </div>
     </header>
@@ -93,7 +90,7 @@
                 <div class="col-lg-12 text-center"style="margin-top:-80px">
                     <h2 class="section-heading">Project Overview</h2>
                     <h3 class="section-subheading text-muted">The aim of this project is to analyze a database containing
-                    recipes from around the world using networks. With this we intentend to find similarities between the
+                    recipes from around the world using networks. With this we intentend to find similarities between the 
                     database and the real world.</h3>
                 </div>
             </div>
@@ -103,18 +100,18 @@
                         <img src="https://cdn2.iconfinder.com/data/icons/classic-development-circle/512/data_warehouse-512.png"alt="Mountain View" style="width:100px;height:100px;">
                     </div>
                     <h4 class="service-heading">Data visualization</h4>
-                    <p class="text-muted">Data visualization throught ingredient and recipe networks.</p>
+                    <p class="text-muted">Data visualization through ingredient and recipe networks.</p>
                 </div>
                 <div class="col-md-4">
                     <img src="http://www.cytoscape.org/images/logo/cy3logoOrange.svg" alt="Mountain View" style="width:100px;height:100px;">
                     <h4 class="service-heading">Network analysis</h4>
-                    <p class="text-muted">Analysis of communities, world cuisines,
+                    <p class="text-muted">Analysis of communities, world cuisines, 
                     importance of ingredients and creation of recipes based on key ingredients.</p>
                 </div>
                 <div class="col-md-4">
                     <img src="http://www.clarabridge.com/wp-content/themes/clarabridge/images/logo.svg" alt="Mountain View" style="width:100px;height:100px;">
                     <h4 class="service-heading">Sentiment analysis</h4>
-                    <p class="text-muted">Analysis of the sentiment linked to the different cousines of the world. Which ones are tha happiest?
+                    <p class="text-muted">Analysis of the sentiment linked to the different cuisines of the world. Which ones are tha happiest? 
                     And the saddest?</p>
                 </div>
             </div>
@@ -128,17 +125,18 @@
                 <div class="col-lg-12 text-center"style="margin-top:-80px">
                     <h2 class="section-heading">The Database</h2>
                     <h3 class="section-subheading text-muted">The database for this project was obtained from a Kaggle competition and Yummly
-                     and it contains recipes from all over the world. In total we have x recipes and xx ingredients.
-                     We wil be working with a JSON file of 12Mb. All the data inside will be ordered by cuisine, recipe ID, and ingredients of the recipe.
+                     and it contains recipes from all over the world. In total we have 39774 recipes and 1817 ingredients.
+                     We will be working with a JSON file of 12Mb. All the data inside will be ordered by cuisine, recipe ID, and ingredients of the recipe.
+                    You can download the database <a href="https://www.kaggle.com/c/whats-cooking/data">HERE</a>.
                     </h3>
-
+                  
                     <img src="yummly.jpg"
                              style="width:1150px;height:800px;">
                     <p class="text-muted" style="padding-top:20px"></p>
-
+                     
 
                 </div>
-            </div>
+            </div> 
         </div>
     </section>
 
@@ -152,7 +150,7 @@
                     <img src="graph2.jpg" style="width:1200px; align-self:center; margin-top:-50px ">
                     <p style="color:dimgrey "> Food Network graph</p>
                 </div>
-            </div>
+            </div>   
         </div>
     </section>
     <section id="about">
@@ -161,13 +159,13 @@
                 <div class="col-lg-12 text-left">
                     <h3 style="margin-top:-80px">Introduction to the data</h3>
                     <p> The first part of the project will consist on the analysis of the network, taking a look at the nodes we selected, their links, and how the network is built. So let's begin by
-                    explaining  a little bit what the database we are using contains.
+                    explaining  a little bit what the database we are using contains. 
                     </p>
-                    <p> As se mentioned earlier, the database is obtained from a Kaggle competition called "What's Cooking" that was proposed by Yummly. For his, the recipe site provided a series of
-                    recipes ordered by cuisine type like Greek, Chinese, Japanese, Italian... All the recipes contained a recipe ID and a list with the ingredients needed to cook it. Unfortunatelly,
-                    it didn't contan the name of the recipe. But no worries! we will take care of that later on the project. To sum up, this introduction, here is an example of one of the recipes from
+                    <p> As se mentioned earlier, the database is obtained from a Kaggle competition called <a href="https://www.kaggle.com/c/whats-cooking">"What's Cooking?"</a> that was proposed by Yummly. For this, the recipe site provided a series of 
+                    recipes ordered by cuisine type like Greek, Chinese, Japanese, Italian... All the recipes contained a recipe ID and a list with the ingredients needed to cook it. Unfortunatelly, 
+                    it didn't contain the name of the recipe. But no worries! we will take care of that later on the project. To sum up, this introduction, here is an example of one of the recipes from 
                     the database:</p>
-                    <ul style="list-style-type:none">
+                    <ul style="list-style-type:none">   
                         <li> { </li>
                         <li style="font-style:italic"> "id": 24717,</li>
                         <li> "cuisine": "indian",</li>
@@ -183,21 +181,21 @@
                                 <li> "spinach",</li>
                                 <li> "sweet potatoes"</li>
                         </ul>
-                        <li> }</li>
+                        <li> }</li> 
                     </ul>
-
+                    
                     <h3 style="margin-top: 50px">Creating the network</h3>
                     <p>To start creating the network, first we need to define which were going to be the nodes and which would be the links between them. In our case, we decided that the ingredients
-                    of each recipe would be the nodes of the network. The link on the other hand would be the recipes they share. This means that, if two ingredients appear in the same recipe they would
-                    linked in the network. Moreover, we decided to create the network as a weighted network, where the weight of the links would be the amount of recipes the ingredients sare. In total we
-                    39774 recipes and 1817 ingredients. With this, we created a network with 1817 nodes and 41325 links. As mentioned before it is a weighted and undirected graph.
+                    of each recipe would be the nodes of the network. The links on the other hand would be the recipes they share. This means that, if two ingredients appear in the same recipe they would
+                    linked in the network. Moreover, we decided to create the network as a weighted network, where the weight of the links would be the amount of recipes the ingredients share. In total, we have
+                    39774 recipes and 1817 ingredients. With this, we created a network with 1817 nodes and 41325 links. As mentioned before it is a weighted and undirected graph. 
                    </p>
                     <img src="nodes.png" style="width:1200px; align-self:center; margin-top:-150px ">
+                    
 
-
-                    <h3 style="margin-top:-80px">Analyzing the network</h3>
-                    <p> The first steps we took to analyze this network is to look at the degree of the ingredients.  The degree represents the amount of links a node has, and since in our network the links
-                    are recipes, it would make sense that the most used ingredients in cooking have the highest number on links, so let's take a look at it:</p>
+                    <h3 style="margin-top:-80px">Analyzing the network</h3>    
+                    <p> The first steps we took to analyze this network were to look at the degree of the ingredients.  The degree represents the amount of links a node has, and since in our network the links 
+                    are recipes, it would make sense that the most used ingredients in cooking have the highest number on links, so let's take a look at it:</p>  
                     <table style="width:35%">
                         <tr>
                             <th>Ingredient</th>
@@ -236,32 +234,234 @@
                             <td>3256</td>
                         </tr>
                     </table>
-                    <p style="margin-top:15px">The next step was to assign each ingredient to a cuisine. Up to this point, what we have in the network is a mess of ingredients mixed up with links conecting them. Since our goals are to compare this network to reality
+                    <p style="margin-top:15px">The next step was to assign each ingredient to a cuisine. Up to this point, what we have in the network is a mess of ingredients mixed up with links connecting them. Since our goals are to compare this network to reality
                     we need to sign each ingredient to a different cuisine.</p>
                     <p> From our data, we can extract that we have 20 different types of cuisines: irish, mexican, chinese, filipino, vietnamese, moroccan, brazilian, japanese, british, greek, indian, jamaican,
                      french, spanish, russian, cajun creole, thai, southern US, korean and italian. To assign each ingredient to its cuisine we need to check in which recipes the ingredient appears and add it to the cuisine that recipe
                     belongs. However, many ingredients aren't unique to a cuisine. To solve this issue we aproached the solution in two ways and after seeing the results we selected the one we thought was most representative of reality.
-                    Here we will explain the methos we finally used, but the other can be found in the notebook.</p>
-                    <p>The method we chose assigned each ingredient to the cuisine in which it appeared most. Let's see this with an example from the notebook: </p>
+                    Here we will explain the method we finally used, but the other one can be found in the notebook.</p>
+                    <p>The method we chose assigned unique ingredients (ingredients that only appear in recipes from one cuisine) to their respective cuisine,
+                    and ingredients that appear in multiple cuisines to the one in which they appeared most. Let's see this with an example from the notebook: </p>
                     <p>Soy sauce is...</p>
-                    <p style="font-style: italic">{u'irish': 0, u'mexican': 2, u'chinese': 35, u'filipino': 5, u'vietnamese': 6, u'spanish': 0, u'japanese': 8, u'moroccan': 0, u'french': 0, u'greek': 0, u'indian': 2, u'jamaican': 1, u'british': 0, u'brazilian': 0,
-                    u'russian': 0, u'cajun_creole': 0, u'thai': 4, u'southern_us': 0, u'korean': 15, u'italian': 0}</p>
+                    <p style="font-style: italic">irish: 0, mexican: 2, chinese: 35, filipino: 5, vietnamese: 6, spanish: 0, japanese: 8, moroccan: 0, french: 0, greek: 0, indian: 2, jamaican: 1, british: 0, brazilian: 0, 
+                    russian: 0, cajun_creole: 0, thai: 4, southern_us: 0, korean: 15, italian: 0</p>
                     <p>Chinese!</p>
                     <p>Now it's time to take a deeper look at these cuisines, analize communities and various degrees for the nodes.</p>
 
                     <h3 style="margin-top: 50px">Cuisines</h3>
                     <p> Let's start looking at the cuisines by the number of ingredients each one has.</p>
                     <img src="ing-cui2.png" style="width:1200px; margin-top:15px ">
-                    <p>We can see that the number of ingredients per cuisine in very irregular since and mexican and italian cuisines have ten times more ingredients than brazilian or spanish cuisines.
-                    We were affraid that this was just a characterisitic of our dataset and that there wasn't much that we could do with it. To check that it's not due to our assignment of ingredients to a single cuisine
+                    <p>We can see that the number of ingredients per cuisine is very irregular since and mexican and italian cuisines have ten times more ingredients than brazilian or spanish cuisines.
+                    We were affraid that this was just a characterisitic of our dataset and that there wasn't much that we could do with it. To check that it's not due to our assignment of ingredients to a single cuisine 
                     we ploted the number of recipes that we had per cuisine.</p>
                     <img src="ing-cui3.png" style="width:1200px; margin-top:15px ">
                     <p>We see that the distribution of the number of recipes follows a similar pattern to the number of ingredients per cuisine so we can't say our assignment was farfetched.</p>
-                    <p> Añadir lo de # Understanding the difference between degree and degree_centrality?¿</p>
 
-                    <h3 style="margin-top: 50px">Defining communities</h3>
+                    <h3 style="margin-top: 50px">Network indicators, node relevance</h3>
+                    <p>We want to find what nodes are more relevant in the network, specially for each different cuisine. The goal is to find the most representative ingredients of every cuisine. To achieve that, we will compile a set of 
+                    indicators that are candidates to give us useful information about nodes' relevance inside their community's subgraph.</p>
+                    <p> We will see this by displaying some of the cuisines with the top ingredients by indicator.</p>
+                    <p> </p>
+                    <p><b>Degree:</b></p>
+                    <table style="width:50%">
+                        <tr>
+                            <th>   </th>
+                            <th>Irish</th>
+                            <th>Mexican</th>
+                            <th>Chinese</th>
+                            <th>Filipino</th>
+                        </tr>
+                        <tr>
+                            <td>1  </td>
+                            <td>beef broth</td>
+                            <td>onions</td>
+                            <td>water</td>
+                            <td>fat</td>
+                        </tr>
+                        <tr>
+                            <td>2  </td>
+                            <td>green cabbage</td>
+                            <td>ground cumin</td>
+                            <td>soy sauce</td>
+                            <td>apple cider vinegar</td>
+                        </tr>
+                        <tr>
+                            <td>3  </td>
+                            <td>ice</td>
+                            <td>chili powder</td>
+                            <td>sesame oil</td>
+                            <td>egg yolks</td>
+                        </tr>
+                    </table>
+                    
+                    <p> </p>
+                    <p><b>TF-IDF:</b></p>
+                    <table style="width:50%">
+                        <tr>
+                            <th>   </th>
+                            <th>Irish</th>
+                            <th>Mexican</th>
+                            <th>Chinese</th>
+                            <th>Filipino</th>
+                        </tr>
+                        <tr>
+                            <td>1  </td>
+                            <td>Guinness Beer</td>
+                            <td>jalapeño chilies</td>
+                            <td>soy sauce</td>
+                            <td>peppercorns</td>
+                        </tr>
+                        <tr>
+                            <td>2  </td>
+                            <td>green cabbage</td>
+                            <td>chili powder</td>
+                            <td>sesame oil </td>
+                            <td>thai chile</td>
+                        </tr>
+                        <tr>
+                            <td>3  </td>
+                            <td>ice</td>
+                            <td>salsa</td>
+                            <td>corn starch</td>
+                            <td>fat</td>
+                        </tr>
+                    </table>
+                    
+                    <p> </p>
+                    <p><b>Betweeness Centrality:</b></p>
+                    <table style="width:50%">
+                        <tr>
+                            <th>   </th>
+                            <th>Irish</th>
+                            <th>Mexican</th>
+                            <th>Chinese</th>
+                            <th>Filipino</th>
+                        </tr>
+                        <tr>
+                            <td>1  </td>
+                            <td>Beef broth</td>
+                            <td>vegetable oil</td>
+                            <td>water</td>
+                            <td>thai chile</td>
+                        </tr>
+                        <tr>
+                            <td>2  </td>
+                            <td>green cabbage</td>
+                            <td>onions</td>
+                            <td>green onions</td>
+                            <td>shredded carrots</td>
+                        </tr>
+                        <tr>
+                            <td>3  </td>
+                            <td>Guinness beer</td>
+                            <td>jalapeño chiles</td>
+                            <td>scallions</td>
+                            <td>peppercorns</td>
+                        </tr>
+                    </table>
+                    
+                    <p> </p>
+                    <p><b>Degree Centrality:</b></p>
+                    <table style="width:50%">
+                        <tr>
+                            <th>   </th>
+                            <th>Irish</th>
+                            <th>Mexican</th>
+                            <th>Chinese</th>
+                            <th>Filipino</th>
+                        </tr>
+                        <tr>
+                            <td>1  </td>
+                            <td>Beef broth</td>
+                            <td>onions</td>
+                            <td>water</td>
+                            <td>blueberri preserv</td>
+                        </tr>
+                        <tr>
+                            <td>2  </td>
+                            <td>green cabbage</td>
+                            <td>jalapeño chilies</td>
+                            <td>soy sauce</td>
+                            <td>coffee beans</td>
+                        </tr>
+                        <tr>
+                            <td>3  </td>
+                            <td>Guinness beer</td>
+                            <td>sour cream</td>
+                            <td>sesame oil</td>
+                            <td>salted butter</td>
+                        </tr>
+                    </table>
+                    
+                    <p> </p>
+                    <p><b>Eigenvector Centrality:</b></p>
+                    <table style="width:50%">
+                        <tr>
+                            <th>   </th>
+                            <th>Irish</th>
+                            <th>Mexican</th>
+                            <th>Chinese</th>
+                            <th>Filipino</th>
+                        </tr>
+                        <tr>
+                            <td>1  </td>
+                            <td>Beef broth</td>
+                            <td>onions</td>
+                            <td>water</td>
+                            <td>salted butter</td>
+                        </tr>
+                        <tr>
+                            <td>2  </td>
+                            <td>turnips</td>
+                            <td>ground cumin</td>
+                            <td>soy sauce</td>
+                            <td>filet</td>
+                        </tr>
+                        <tr>
+                            <td>3  </td>
+                            <td>green cabbage</td>
+                            <td>vegetable oil</td>
+                            <td>sesame oil</td>
+                            <td>blueberri preserv</td>
+                        </tr>
+                    </table>
 
-                </div>
+
+                    <p style="margin-top:15px">Let's dive deeper into the meaning of the computed indicators. First, what's the difference between degree and degree centrality?</p>
+                    <p><b>Degree centrality</b> of a node n is degree(n)/numberof_nodes, where degree(n) is the _simple degree -ignoring the weights! Let's take as an example two nodes that have the same degree. Degree centrality is giving more
+                    importance to the ingredient that is connected to a higher number different ingredients, over an ingredient that shares many recipes with a fewer number of ingredients. That explains the differences between these two rankings.
+                    </p>
+                    <p><b>Betweenness centrality:</b> as we know betweenness centrality quantifies the number of times a node acts as a bridge along the shortest path between two other nodes. In our network, it quantifies the number of times an ingredient is
+                     on the way between two ingredients, if we tried to navigate between ingredients following the edges denoted by the shared recipes. Even if it measures the centrality of a node, it doesn't have a clear physical meaning in our dataset.
+                        </p>
+                    <p><b>Eigenvector centrality</b> assigns relative scores to all nodes in the network based on the concept that connections to high-scoring nodes contribute more to the score of the node in question than equal connections to low-scoring nodes.
+                    That is, being connected to a hub or a node that is close to a hub gives a high score. Again, it's not a bad measure of centrality but it doesn't carry a strong stand-alone meaning.
+                    </p>
+                    <p>Examining the generated text file, we see that there are subtle differences in the top ten of values for the different indicators. The difference though, is mainly the order of the ingredients, but in each cuisine we see that the ingredients
+                     in the different top 10s are almost the same, so we'll consider them all good to get us to our goal. These rankings let us, as we hoped, see the most important ingredients of each cuisine!</p>
+
+                    <h3 style="margin-top: 50px">Communities</h3>
+                    <p>Our next goal is to analyse the communities present in our network. Our first hypotheses is that the cuisines are communities that show the modularity of the network. We will start by computing the modularity of the cuisine partition.
+                      We'll then find the best partition with Louvain's method and then compare the obtained modularity -which is the optimal since the best partition is the one that maximises the modularity.
+                        </p>
+                    <p>The result from doing this are the following ones:</p>
+                    <p>The modularity for the louvain partition is 0.285239.</p>
+                    <p>The modularity for the cuisine partition is 0.209728.</p>
+                    <p>The modularity for a partition found randomly is 0.069611.</p>
+                    <p>We see that the lovain partition achieves a 36% higher modularity than the cuisines, so we found a slightly better way to group the ingredients than the cuisine they belong to. According to Louvain's heuristics, of course.
+                            The modularity of the cuisine partition isn't low enough to say it's a bad partition, we see that it indeed shows part of the community structure present in the network. It is, certainly, much higher than the modularity of a random partition,
+                            which doesn't come as a surprise. </p>
+                    <p>From the confussion matrix we generated, but are not going to link here because of the size (you can find it in the notebook), we can observe a few interesting things.</p>
+                    <p>The Louvain partition <b>contains 15 communities</b>. That is 5 less communities than cuisine types we have, so cuisine types have been merged to form broader communities. As a perfect example let's take a look at the 4th Louvain community (4th row of the confusion matrix).
+                            It has a big ammount of chinese ingredients, followed by many japanese, thai, vietnamese and korean ingredients. In fact, we see that the asian cuisine is one single community according to Louvain's partition! The nodes belonging to asian
+                            types of cuisine aren't separated enough between each other too be considered different communities according to Lovuain's heuristics.
+                    </p>
+                    <p>Similar effects can be seen in other rows of the confusion matrix, like the 1st one, that contains a high number of italian ingredients but also french and mexican, suggesting that there are many common ingredients between recipes of those cuisines.</p>
+
+                    <h3 style="margin-top: 50px">Solving the recipe name problem</h3>
+                    <p></p>
+
+                    </div>
             </div>
 
         </div>
@@ -285,7 +485,7 @@
                     This are the results for the analysis:
                     </p>
                     <img src="sent_12.png" style="width:1800px; height:600px; align-self:center; margin-top:15px; margin-left:-280px">
-                    <p style="margin-top:-40px"> As we can see from the graph on the left, all the cuisines are quite close in the range of 5 to 6 average sentiment. However, if we adjust the range of the axis like the graph on the right, we can see the differences a bit more
+                    <p style="margin-top:-40px"> As we can see from the graph on the left, all the cuisines are quite close in the range of 5 to 6 average sentiment. However, if we adjust the range of the axis like the graph on the right, we can see the differences a bit more 
                     clearly. The fist thing to notice is that the sentiment related to american a british cuisines is significantly lower than the rest. In a second level, with an average sentiment level we find mexican, italian, greek or japanese cuisines
                     , and above those with the best sentiment are chinese, cajun or vietnamese cuisines. We find quite interesting that cuisines with usually "bad reputation" like the british and american ones are the ones with the lowest rating. On the ohter hand
                     asian quisines have good reputation in the western countries, so that might be a reason why they are rated so high. </p>
@@ -338,18 +538,18 @@
         </div>
     </section>
     <!-- Team Section -->
-
-
+    
+   
 
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-
+                    
                 </div>
             </div>
-
+            
         </div>
     </section>
 
